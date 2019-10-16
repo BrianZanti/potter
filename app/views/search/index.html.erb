@@ -1,0 +1,11 @@
+<h1>Results:</h1>
+<p><%= @presenter.result_count %> results</p>
+
+<% @presenter.house_members.each do |member| %>
+  <section class="member">
+    <p class='name'><%= member.name %></p>
+    <p class='role'><%= member.role %></p>
+    <p class='house'><%= member.house %></p>
+    <p class='patronus'><%= member.patronus %></p>
+  </section>
+<% end %>
